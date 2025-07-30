@@ -6,7 +6,28 @@
   <title>All Features – Onyx UI</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Glowing text style */
+    /* Bring the section higher up */
+    .all-features {
+      margin-top: 0;
+      padding-top: 1px; /* prevents margin collapse */
+    }
+
+    .category {
+      margin: 1.5rem 0 1rem;
+    }
+    .category h3 {
+      color: var(--cyan);
+      text-shadow: 0 0 6px var(--cyan);
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
     .glow-text {
       color: var(--cyan);
       text-shadow:
@@ -16,56 +37,66 @@
       font-size: 1rem;
       margin: 0.3rem 0;
     }
-    .category {
-      margin: 2rem 0 1rem;
-    }
-    .category h3 {
-      color: var(--cyan);
-      text-shadow: 0 0 6px var(--cyan);
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .feature-list {
-      list-style: none;
-      padding-left: 0;
+
+    /* Optional smaller title spacing adjustment */
+    .all-features .category:first-child {
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <header class="hero">
     <h1 class="neon-title">OnyxUI</h1>
-    <p class="subtitle">All Features — Explore Every Mod Before Spending Anything</p>
+    <p class="subtitle">Explore Every Power Unleashed</p>
   </header>
 
+  <!-- Main summarised features -->
   <section class="features">
-    <!-- existing summarized cubes if wanted -->
+    <div class="feature">
+      <h2>Ultra Fast</h2>
+      <p>Optimized for top FPS performance with zero lag.</p>
+    </div>
+    <div class="feature">
+      <h2>Music Player</h2>
+      <p>Broadcast custom music to all players (Server‑Sided).</p>
+    </div>
+    <div class="feature">
+      <h2>Customizable UI</h2>
+      <p>Drag, scale, and personalize your experience.</p>
+    </div>
   </section>
 
+  <!-- Small button to view all features -->
+  <div class="more-features">
+    <a href="fullfeatures.html" class="secondary-btn">See All Features</a>
+  </div>
+
+  <!-- All features section, now placed higher up -->
   <section class="all-features">
     <div class="category">
-      <h3>Movement</h3>
+      <h3>Player</h3>
       <ul class="feature-list">
-        <li class="glow-text">testing</li>
-        <li class="glow-text">testing</li>
-        <li class="glow-text">testing</li>
+        <li class="glow-text">Ultra Fast performance</li>
+        <li class="glow-text">Customizable UI & layout</li>
+        <li class="glow-text">Hotkey Bindings</li>
       </ul>
     </div>
 
     <div class="category">
-      <h3>Visual</h3>
+      <h3>Mods</h3>
       <ul class="feature-list">
-        <li class="glow-text">testing</li>
-        <li class="glow-text">e</li>
-        <li class="glow-text">e</li>
-        <li class="glow-text">e</li>
-        <li class="glow-text">e</li>
+        <li class="glow-text">ESP System (see through walls)</li>
+        <li class="glow-text">Aimbot with smoothness control</li>
+        <li class="glow-text">Skin Changer for characters & weapons</li>
+        <li class="glow-text">Script Hub (community scripts)</li>
+        <li class="glow-text">Chat‑based Mod Commands</li>
       </ul>
     </div>
 
     <div class="category">
-      <h3>Music</h3>
+      <h3>MusicPlayer</h3>
       <ul class="feature-list">
-        <li class="glow-text">Server-side Music Player</li>
+        <li class="glow-text">Server‑side Music Player</li>
         <li class="glow-text">Play custom tracks for everyone</li>
       </ul>
     </div>
