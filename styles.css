@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --bg: #000000;
+  --cyan: #00ffff;
+  --text: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+.hero {
+  padding: 120px 20px;
+}
+
+.neon-title {
+  font-size: 4rem;
+  color: var(--cyan);
+  text-shadow:
+    0 0 5px var(--cyan),
+    0 0 20px var(--cyan),
+    0 0 40px var(--cyan),
+    0 0 80px var(--cyan);
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.neon-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: var(--bg);
+  background: var(--cyan);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow:
+    0 0 5px var(--cyan),
+    0 0 25px var(--cyan),
+    0 0 50px var(--cyan);
+  transition: box-shadow 0.3s;
+}
+
+.neon-btn:hover {
+  box-shadow:
+    0 0 10px var(--cyan),
+    0 0 50px var(--cyan),
+    0 0 100px var(--cyan);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 60px 20px;
+}
+
+.feature {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 240px;
+}
+
+.feature h2 {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.buy-now {
+  padding: 80px 20px;
+}
+
+.section-title {
+  color: var(--cyan);
+  text-shadow: 0 0 6px var(--cyan);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer a {
+  color: var(--text);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  color: var(--cyan);
+}
