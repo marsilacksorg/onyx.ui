@@ -82,6 +82,29 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.more-features {
+  margin-top: 1rem;
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--cyan);
+  background: transparent;
+  border: 2px solid var(--cyan);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  background: var(--cyan);
+  color: var(--bg);
+}
+
 .buy-now {
   padding: 80px 20px;
 }
