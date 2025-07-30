@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>All Features – Onyx UII</title>
+  <title>All Features – Onyx UI</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Bring the section higher up */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Use flow-root to prevent margin collapse */
     .all-features {
+      display: flow-root;
+      padding-top: 0.05px;
       margin-top: 0;
-      padding-top: 1px; /* prevents margin collapse */
     }
 
     .category {
@@ -37,11 +43,6 @@
       font-size: 1rem;
       margin: 0.3rem 0;
     }
-
-    /* Optional smaller title spacing adjustment */
-    .all-features .category:first-child {
-      margin-top: 1rem;
-    }
   </style>
 </head>
 <body>
@@ -50,28 +51,7 @@
     <p class="subtitle">Explore Every Power Unleashed</p>
   </header>
 
-  <!-- Main summarised features -->
-  <section class="features">
-    <div class="feature">
-      <h2>Ultra Fast</h2>
-      <p>Optimized for top FPS performance with zero lag.</p>
-    </div>
-    <div class="feature">
-      <h2>Music Player</h2>
-      <p>Broadcast custom music to all players (Server‑Sided).</p>
-    </div>
-    <div class="feature">
-      <h2>Customizable UI</h2>
-      <p>Drag, scale, and personalize your experience.</p>
-    </div>
-  </section>
-
-  <!-- Small button to view all features -->
-  <div class="more-features">
-    <a href="fullfeatures.html" class="secondary-btn">See All Features</a>
-  </div>
-
-  <!-- All features section, now placed higher up -->
+  <!-- All features list begins right below -->
   <section class="all-features">
     <div class="category">
       <h3>Player</h3>
@@ -89,12 +69,12 @@
         <li class="glow-text">Aimbot with smoothness control</li>
         <li class="glow-text">Skin Changer for characters & weapons</li>
         <li class="glow-text">Script Hub (community scripts)</li>
-        <li class="glow-text">Chat‑based Mod Commands</li>
+        <li class="glow-text">Chat‑based mod commands</li>
       </ul>
     </div>
 
     <div class="category">
-      <h3>MusicPlayer</h3>
+      <h3>Music</h3>
       <ul class="feature-list">
         <li class="glow-text">Server‑side Music Player</li>
         <li class="glow-text">Play custom tracks for everyone</li>
