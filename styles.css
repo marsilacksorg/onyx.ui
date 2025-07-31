@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Utopium';
+  src: url('fonts/utopium-regular.woff2') format('woff2'),
+       url('fonts/utopium-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
-  --bg: #000000;
-  --cyan: #00ffff;
+  --bg: #000;
+  --cyan: #0ff;
   --text: #ccc;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Utopium', 'Orbitron', sans-serif;
+  text-transform: uppercase;
   text-align: center;
 }
 
